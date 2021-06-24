@@ -318,7 +318,7 @@ console.log(BMIMark, BMIJohn, markHigherBMI);
 //     console.log('Both win the trophy!')
 // }
 
-//Bonus 
+//Bouns 
 
 // const DolphinScore = (97 + 112 + 80) / 3
 // const KoalasScore = (109 + 95 + 50) / 3
@@ -335,3 +335,80 @@ console.log(BMIMark, BMIJohn, markHigherBMI);
 // } else {
 // console.log('No one wins')
 // }
+// const day = 'Monday'
+
+// switch (day) {
+//     case 'Monday': // day === 'Monday'
+//             console.log("Plan course Structure");
+//             console.log("Go to coding meetup");
+//         break;
+//         case 'Tuesday':
+//         console.log("prepare vids");
+//         break;
+//         case 'Wednesday':
+//         case 'Thursday':
+//         console.log("Writing examples");
+//         break ;
+//         case 'Friday':
+//         console.log("Recording examples");
+//         break ;
+//         case 'Saturday':
+//         case 'Sunday':
+//         console.log("Weekend");
+//             break ;
+//             default:
+//             console.log("Not a valid");
+// }
+
+// const day = 'Saturday';
+
+// if (day === 'Monday'){
+//     console.log("Its monday")
+// } else if (day === 'Wednesday' || day === 'Thursday' || day === 'Friday') {
+//     console.log("Mid Week")
+// } else if (day === 'Saturday' ||  day ===  "Sunday"){
+//     console.log("Lords day off")
+// } else {
+//     console.log("error")
+// }
+
+// 3 + 4 
+// 1991
+
+// true && false && false
+
+// if (23> 10){
+//     const str = '23 is bigger'
+//     console.log(str)
+// }
+// const Name = 'Michael'
+// console.log(`I'm ${2021 - 1998} years old ${Name}`)
+
+// const age = 12;
+
+// // age >=  18 ? console.log(' I like to drink wine'): 
+// // console.log(' I like to drink water')
+//  const drink = age >=  18 ? 'wine' : 'water'
+// console.log(drink)
+//  let drink2;
+// if (age >=18) {
+//     drink2 = 'wine'
+// } else{
+//     drink2 = 'water'
+// }
+// console.log(drink2)
+// console.log(`I like to drink ${age >=  18 ? 'wine' : 'water'}`)
+
+////////////////////////////////////
+// Coding Challenge #4
+
+/*
+Steven wants to build a very simple tip calculator for whenever he goes eating in a resturant. In his country, it's usual to tip 15% if the bill value is between 50 and 300. If the value is different, the tip is 20%.
+
+1. Your task is to caluclate the tip, depending on the bill value. Create a variable called 'tip' for this. It's not allowed to use an if/else statement (If it's easier for you, you can start with an if/else statement, and then try to convert it to a ternary operator!)
+2. Print a string to the console containing the bill value, the tip, and the final value (bill + tip). Example: 'The bill was 275, the tip was 41.25, and the total value 316.25'
+*/
+
+// const totalCost = 22;
+// const tip = totalCost <= 300 && totalCost >= 50 ? totalCost * 0.15 : totalCost * 0.25;
+// console.log(`The bill was ${totalCost}, the tip was ${tip}, and the total value ${totalCost + tip}`)
