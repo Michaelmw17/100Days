@@ -243,13 +243,125 @@ HINT: Remember that an array needs a value in each position, and that value can 
 GOOD LUCK 😀
 */
 
-// const calcTip = function (bill) {
-//   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+
+// const calcTip = bill => bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+
+// const bills = [ 125, 555, 44]
+
+// const tip =[calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])]
+// console.log(tip, bills)
+
+// const totals = [bills[0] + tip[0],bills[1] + tip[1], bills[2] + tip[2]]
+// console.log(totals)
+
+
+// Introduction to Objects
+// const jonasArray = [
+//   'Jonas',
+//   'Schmedtmann',
+//   2037 - 1991,
+//   'teacher',
+//   ['Michael', 'Peter', 'Steven']
+// ];
+
+// const jonas = {
+//   firstName: 'Jonas',
+//   lastName: 'Whatever',
+//   age: 2021-1998,
+//   job: 'teacher',
+//   friends: ['Michael', 'Peter', 'Steven']
+// };
+
+
+// const jonas = {
+//   firstName: 'Jonas',
+//   lastName: 'Whatever',
+//   age: 2021-1998,
+//   job: 'teacher',
+//   friends: ['Michael', 'Peter', 'Steven']
+// };
+
+// console.log(jonas)
+
+// console.log(jonas.lastName)
+// console.log(jonas['lastName'])
+
+// const nameKey = 'Name';
+// const ageKey = 'ge';
+// const friendsKey = 'ends';
+
+// console.log(jonas['first' + nameKey])
+// console.log(jonas['last' + nameKey])
+// console.log(jonas['a' + ageKey])
+// console.log(jonas['fri' + friendsKey])
+
+// const interestedIn = prompt('What do you want to know about jonas? Choose between firstName, lastName, age, friends and job')
+// // console.log(interestedIn)
+// console.log(jonas[interestedIn])
+
+// if(jonas[interestedIn]){
+//     console.log(jonas[interestedIn])
+// }else {
+//     console.log('Wrong request!  Choose between firstName, lastName, age, friends and job')
 // }
 
-// const bills = [125, 555, 44]
-// const tip =[calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])]
-// console.log(tip)
+// jonas.location = 'Sydney'
+// jonas['twitter'] = '@michaelmw17';
+// console.log(jonas)
 
-// const totals = [bills[0] + tip[0], bills[1] + tip[1], bills[2] + tip[2]]
-// console.log(bills, tip, totals)
+
+
+// const jonas = {
+//     firstName: 'Jonas',
+//     lastName: 'Whatever',
+//     birthYear: 1998,
+//     job: 'teacher',
+//     friends: ['Michael', 'Peter', 'Steven'],
+//     hasDriverLicense: true,
+
+//     // calcAge: function (birthYear) {
+//     //     return 2021 - birthYear;
+//     // }
+//     //  calcAge: function () {
+//     //     //  console.log(this)
+//     //     return 2021 - this.birthYear;
+//     // }
+//          calcAge:  function () {
+//         this.age = 2021 - this.birthYear;
+//         return this.age;
+//     },
+//     getSummary: function () {
+//         return `${this.firstName} is a ${this.calcAge()} years old ${this.job}, and he has ${this.hasDriverLicense ? 'a' : 'no'} drivers licence ` 
+//         }
+//     };
+
+// //   const calcAge =  function (birthYear) {
+// //       return 2037 - birthYear;
+// //   }
+// console.log(jonas.calcAge())
+
+// console.log(jonas.age)
+// console.log(jonas.age)
+// console.log(jonas.age)
+// console.log(jonas.getSummary())
+// console.log(jonas.calcAge(1998))
+// console.log(jonas["calcAge"](1998))
+
+//Challenge
+// *Jonas is a 42 year old teacher, and he has a drivers licence*/
+
+// console.log(`${jonas.firstName} is a ${jonas.age} years old ${jonas.job} and he has a drivers licence ${jonas.hasDriverLicense}`)
+
+// Coding Challenge #3
+
+/*
+Let's go back to Mark and John comparing their BMIs! This time, let's use objects to implement the calculations! Remember: BMI = mass / height ** 2 = mass / (height * height). (mass in kg and height in meter)
+
+1. For each of them, create an object with properties for their full name, mass, and height (Mark Miller and John Smith)
+2. Create a 'calcBMI' method on each object to calculate the BMI (the same method on both objects). Store the BMI value to a property, and also return it from the method.
+3. Log to the console who has the higher BMI, together with the full name and the respective BMI. Example: "John Smith's BMI (28.3) is higher than Mark Miller's (23.9)!"
+
+TEST DATA: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m tall.
+
+GOOD LUCK 😀
+*/
